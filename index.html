@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jankenpon</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">JANKENPON</h1>
+        <img src="img/logo.png" alt="">
+        
+    </header>
+    <div id="principal">
+        <p id="texto">Você conhece o  Jokenpô? É um jogo bem antigo que tem sua origem na China mas foi no Japão que recebeu  esse nome “Jokenpô” e se popularizou para o mundo todo. Aqui em nosso país é conhecida como Pedra, Papel ou Tesoura.</p>
+        <div id="placar">
+            <div id="jogador">
+                <div id="resultados2">
+                <h2 id="jogadorNome">PLAYER</h2>
+                <p id="jogadorPontos">0</p>
+            </div>
+                <ul id="jogadorEscolha">
+                    <li>
+                        <a id="jogadorEscolha1" onclick="jogar(1)">
+                            <img src="img/pedra.jpg" alt="">
+                        </a>
+                    </li>
+                 
+                    <li>
+                        <a id="jogadorEscolha2" onclick="jogar(2)">
+                            <img src="img/papel.jpg" alt=""></a>
+                    </li>
+            
+                    <li>
+                        <a id="jogadorEscolha3" onclick="jogar(3)">
+                            <img src="img/tesoura.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="versus">VS</div>
+            <div id="computador">
+                <div id="resultados">
+                <h2 id="computadorNome">COMPUTADOR</h2>
+                <p id="computadorPontos">0</p>
+            </div>
+                <ul id="computadorEscolha">
+                    <li>
+                        <a id="computadorEscolha1">
+                            <img src="img/pedra.jpg" alt="">
+                        </a>
+
+                    </li>
+                    <li >
+                        <a id="computadorEscolha2">
+                            <img src="img/papel.jpg" alt="">
+                        </a>
+                        
+                    </li>
+                    <li >
+                        <a id="computadorEscolha3">
+                            <img src="img/tesoura.jpg" alt="">
+                        </a>
+                        
+                    </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="mensagem">&nbsp;</div>
+    </div>
+
+    <footer>
+        <h1>COPYRIGHT JANKENPON 2023</h1>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

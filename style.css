@@ -1,0 +1,160 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(static/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'black';
+    src: url(static/Raleway-SemiBold.ttf);
+}
+
+header{
+    background-color: #7373b8;
+    height: 156px;
+    display: flex;   
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'black';
+    font-weight: 600;
+    color: white;
+
+}
+
+header img{
+    width: 100px;
+
+}
+
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a {
+    opacity: 0.2;
+    transition: ease-in-out 0.3s;
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+    opacity: 1;
+}
+
+li {
+    list-style: none;
+}
+
+li img {
+    margin: 32px;
+    width: 200px;
+    border: 2px black solid;
+    border-radius: 300px;
+    justify-content: space-around;
+
+}
+
+#jogadorEscolha,
+#computadorEscolha {
+    display: flex;
+
+
+}
+
+#texto{
+    font-family: 'regular';
+    font-size: 30px;
+    text-align: justify;
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 4%;
+}
+
+#placar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'regular';
+    
+    margin-top: 5%;
+}
+
+#jogadorNome,
+#computadorNome {
+    font-size: 30px;
+text-align: end;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+#resultados{
+    display: flex;
+    margin-left: 12%;
+    background-color: #5f5fe2;
+    width: 584px;
+    height: 53px;
+    border-radius: 23px;
+    color: aliceblue;
+    justify-content: space-around;
+    
+}
+
+#resultados2{
+    display: flex;
+    margin-left: 12%;
+    background-color: #ae5fe2;
+    width: 584px;
+    height: 53px;
+    border-radius: 23px;
+    color: aliceblue;
+    justify-content: space-around;
+}
+
+
+#jogadorPontos,
+#computadorPontos {
+    font-family: 'black';
+    font-size: 33px;
+    padding-top: 5px;
+
+}
+
+#versus{
+    font-family: 'black';
+    font-size: 40px;
+}
+
+
+#computador, #versus {
+    text-align: end;
+}
+
+#mensagem{
+    font-family: 'black';
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+footer{
+    height: 150px;
+    background-color: #7373b8;
+font-family: 'regular';
+text-align: center;
+height: 131px;
+color: white;
+}
+
+footer h1{
+    padding-top: 2.2%;
+    font-size: 25px;
+}
