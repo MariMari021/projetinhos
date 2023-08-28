@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquema do amor</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(rgb(206, 192, 255), #9c63b3);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            font: 300 40px 'Poppins', sans-serif;
+            padding: 15px 30px;
+            width: 200px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: ease-in-out 0.3s;
+        }
+
+        .tituloPrincipal {
+            font: 700 40px 'Poppins', sans-serif;
+        }
+
+        .titulo {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 300px;
+        }
+
+        @media screen and (max-width:500px) {
+            .botoes{
+    flex-wrap: wrap;
+    margin: 0 ;
+    justify-content: center;
+}
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1 class="tituloPrincipal">
+            QUER NAMORAR COMIGO?
+        </h1>
+    </div>
+    <div class="botoes">
+        <div class="botaoS">
+            <button class="btn" onclick="sim()">SIM!</button>
+        </div>
+        <div class="botaoN">
+            <button class="btn" onclick="esquivo(this)" onmouseover="esquivo(this)">NAO!</button>
+        </div>
+    </div>
+</body>
+<script>
+    function sim() {
+        location.href = "https://www.tiktok.com/@elijahmelow/video/7110012052495699206"
+    }
+    function esquivo(btn) {
+        btn.style.position = 'absolute';
+        btn.style.bottom = posicao(10, 80);
+        btn.style.left = posicao(10, 80);
+    }
+    function posicao(min, max){
+        return(Math.random()*(max-min+min))+"%";
+    }
+
+</script>
+
+</html>
